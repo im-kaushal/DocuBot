@@ -126,6 +126,3 @@ graph TD
 
 Created by [Kaushal](mailto:mail4kaushal.kr@gmail.com) • Contributions welcome!
 
----
-
-Would you like me to bundle this into a zip structure or set up GitHub Actions for CI/deployment?
