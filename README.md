@@ -85,22 +85,6 @@ pip install fastapi uvicorn python-multipart openai langchain chromadb PyMuPDF r
 uvicorn main:app --host 0.0.0.0 --port 5000
 ```
 
----
-
-## 🖼 Architecture Overview
-
-```mermaid
-graph TD
-  RN[📱 React Native App]
-  RN -->|PDF + Question| BE[🌐 Express.js Backend]
-  BE -->|Upload PDF| S3[(☁️ Amazon S3)]
-  BE -->|Forward Request| PY[🧠 Python FastAPI (LangChain)]
-  PY -->|Download PDF| S3
-  PY -->|Answer| BE
-  BE --> RN
-```
-
----
 
 ## ✅ TODO / Enhancements
 
